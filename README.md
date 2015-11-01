@@ -2,7 +2,6 @@
 
 
 ## SYNOPSIS
-
  Simple Internet web service used to obtain the
  host's current public addressable IP address.
  Connects to the canihazip.com web site using LWP::Simple
@@ -13,10 +12,9 @@
  * Add other services other then www.canihazip.com
 
 ## Methods
-
  * returnIP()
- * 
- ## Retruns
+ 
+## Retruns
 * Valid IPv4 address if successful.
 * "ERROR! - No Internet connection." on a invalid responce.
 
