@@ -8,4 +8,4 @@
        },
        "depends" : [ "LWP::Simple" ],
        "source-url" : "git://github.com/cbk/WebService-HazIP"
-   }
+}
