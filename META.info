@@ -7,5 +7,6 @@
            "WebService::HazIP"    : "lib/WebService/HazIP.pm6"
        },
        "depends" : [ "LWP::Simple" ],
-       "source-url" : "git://github.com/cbk/WebService-HazIP"
+       "source-url" : "git://github.com/cbk/WebService-HazIP",
+       "license" : "CC-BY-1.0"
 }
