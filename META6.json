@@ -7,7 +7,7 @@
        "provides" : {
            "WebService::HazIP"    : "lib/WebService/HazIP.pm6"
        },
-       "depends" : [ "LWP::Simple" ],
+    "depends" : [ "LWP::Simple", "IO::Socket::SSL" ],
        "source-url" : "git://github.com/cbk/WebService-HazIP.git",
        "license" : "Artistic-2.0"
 }
