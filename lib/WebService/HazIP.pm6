@@ -9,9 +9,10 @@
 ## ensure there is a valid IPv4 address.
 ##
 
+constant $IPurl = "http://www.canihazip.com/s";
+
 class WebService::HazIP {
   use LWP::Simple;
-  has $IPurl = "http://www.canihazip.com/s";
 
   method returnIP {
     my $data = LWP::Simple.get($IPurl);
