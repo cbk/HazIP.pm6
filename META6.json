@@ -1,7 +1,7 @@
 {
        "perl" : "6.*",
        "name" : "WebService::HazIP",
-       "version" : "1.0.0",
+       "version" : "1.0.1",
        "description" : "Simple web service client that queries the canihazip.com web site, to obtain the host's public facing IP address.",
        "author" : "Michael",
        "provides" : {
