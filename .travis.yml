@@ -1,12 +1,11 @@
-language: perl6
-perl6:
-  - latest
-install:
-  - rakudobrew build-panda
-  - panda --notests installdeps .
-  - panda-build
-  - panda --notest install LWP::Simple
+language:
+  - minimal
 
-script:
-  - PERL6LIB=lib prove -e perl6 -vr t/
-sudo: false
+services:
+  - docker
+
+install:
+  - docker pull jjmerelo/perl6-test-openssl
+  - docker images
+
+script: docker run -t -v  $TRAVIS_BUILD_DIR:/test jjmerelo/perl6-test-openssl

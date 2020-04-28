@@ -1,12 +1,9 @@
 use Test;
 use WebService::HazIP;
 
-ok(1);
-
-if (%*ENV<TRAVIS>) {
-    diag "running on travis";
-    my $ipObj = WebService::HazIP.new;
-    say "My public IP address is: " ~ $ipObj.returnIP();
-}
+my $ipObj = WebService::HazIP.new;
+my $ip = $ipObj.returnIP();
+ok $ip, "Can return an IP";
+like $ip, / ^^([\d ** 1..3] ** 4 % '.')$$ /, "Correct IP format";
 
 done-testing();
